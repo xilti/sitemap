@@ -20,7 +20,8 @@ int main()
 		s += "</body>";
 
 		std::vector<unsigned char> v; 
-		std::copy(s.begin(), s.end(), std::back_inserter(v)); return v;
+		std::copy(s.begin(), s.end(), std::back_inserter(v)); 
+		return v;
 	};
 	
 	// Content definition
