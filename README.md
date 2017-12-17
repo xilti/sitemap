@@ -1,7 +1,7 @@
 # sitemap
 Sitemap is a file transfer library.
 
-I originally built this tiny library to use for generating web sites. 
+I originally built this tiny library for generating web sites. 
 It allows you to define your web site layout and content sources. 
 There is a few basic steps. First, you define locations of your 
 site files and folders, and give them labels. The labels can be used later for referencing the site links later.
