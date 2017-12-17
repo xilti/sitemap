@@ -1,4 +1,4 @@
-jj# sitemap
+# sitemap
 Sitemap is a file transfer library.
 
 I originally built this tiny library for generating web sites. 
@@ -52,3 +52,27 @@ The last step is to run it.
 The input parameter is the root folder for the relative paths used earlier, sitecss/home.css and lib/jquery.
 
 That's it!
+
+## Build
+
+### Requirements
+Boost, C++11 or later
+
+### Steps
+* Suppose you cloned to [HOME]/work/sitemap
+* For out-of-source, create a build folder in [HOME]/work, and go there.
+
+	$mkdir build
+
+	$cd build
+
+* Run cmake.
+
+	$cmake ../wsitemap
+
+* Build it.     
+
+	$make
+
+* You should get the sitemap library, like libsitemap.a and a sample binary, 'sm'.
+
