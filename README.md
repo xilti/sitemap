@@ -1,4 +1,4 @@
-# sitemap
+jj# sitemap
 Sitemap is a file transfer library.
 
 I originally built this tiny library for generating web sites. 
@@ -23,7 +23,7 @@ The source folders and files like sitecss/home.css and /lib/jquery are written r
 Next, you specify how the dynamic content is produced by setting functions that return std::vector<unsigned char>. It is better to show it with an example (see the sample folder).
 
 
-	// Content function, it must return std::vector<unsigned int>
+	// Content function, it must return std::vector&lt;unsigned int$gt;
 	auto f = []() 
 	{ 
 		std::string s("<html>"); 
