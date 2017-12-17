@@ -62,17 +62,16 @@ Boost, C++11 or later
 * Suppose you cloned to [HOME]/work/sitemap
 * For out-of-source, create a build folder in [HOME]/work, and go there.
 
-	$mkdir build
-
-	$cd build
+		$mkdir build
+		$cd build
 
 * Run cmake.
 
-	$cmake ../wsitemap
+		$cmake ../sitemap
 
 * Build it.     
 
-	$make
+		$make
 
 * You should get the sitemap library, like libsitemap.a and a sample binary, 'sm'.
 
