@@ -20,7 +20,8 @@ If some of the source content already exists, for example css files or the jquer
 The source folders and files like sitecss/home.css and /lib/jquery are written relative to some root source folder that you define later.
 
 
-Next, you specify how the dynamic content is produced by setting functions that return std::vector<unsigned char>. It is better to show it with an example (see the sample folder).
+The next step is to define your dynamic content. This is done with functions that return std::vector<unsigned char>. 
+It is better to show it with an example. Also, see the sample folder.
 
 
 	// Content function, it must return std::vector&lt;unsigned int$gt;
@@ -49,7 +50,7 @@ The last step is to run it.
 
 	sitemap::generate("/path/to/source/files/and/folders");
 
-The input parameter is the root folder for the relative paths used earlier, sitecss/home.css and lib/jquery.
+The input parameter is the root folder of the relative paths for the source files and folders, sitecss/home.css and lib/jquery, etc..
 
 That's it!
 
