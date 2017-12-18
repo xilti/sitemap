@@ -10,6 +10,9 @@ int main()
 		"/index.html" //destination file
 	};
 
+	g_site["ddd"] = {"dfdf"};
+	g_site["dddd"] = { sitemap::folder("dfdfd"), sitemap::folder("src") };
+
 	// Content function, it must return std::vector<unsigned int>
 	auto f = []() 
 	{ 
