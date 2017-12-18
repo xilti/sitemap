@@ -12,12 +12,12 @@ allows you to control the whole layout in one place without modifying the reset 
 	sitemap["about"] = {"/about/index.html"};
 	...
   
-If some of the source content already exists, for example css files or the jquery library. You can specify them as such.
+If some of the content already exists as file or folders, for example css files or the jquery library, you can specify them as such.
 
 	sitemap["home_css"] = {"/css/home.css", "/sitecss/home.css"];
 	sitemap["jquery"] = {sitemap::folder("/js/jquery"), sitemap::folder("/lib/jquery"];
 
-The source folders and files like sitecss/home.css and /lib/jquery are written relative to some root source folder that you define later.
+The source folders and files should be written relative to a root source folder that you specify later.
 
 
 The next step is to define your dynamic content. This is done with functions that return std::vector<unsigned char>. 
@@ -42,7 +42,7 @@ It is better to show it with an example. Also, see the sample folder.
 	g_site["home"] = f;
 
 
-The set_root function sets the location of the site root directory.
+The set_root function sets the location of the destination site root directory.
 
 	sitemap:set_root("/var/www/mysite");
 
