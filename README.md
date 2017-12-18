@@ -2,10 +2,10 @@
 Sitemap is a file transfer library.
 
 I originally built this tiny library for generating web sites. 
-It allows you to define your web site layout and content sources. 
+It is used to define a web site layout and its content sources. 
 There is a few basic steps. First, you define locations of your 
-site files and folders, and give them labels. The labels can be used later for referencing the site links later.
-It lets you control the whole site layout in one place without modifying the reset of the code.
+site files and folders, and give them labels. The labels can be used later for referencing the site links, that
+allows you to control the whole layout in one place without modifying the reset of the code.
 
 
 	sitemap["home"] =  {"/index.html"};
@@ -37,7 +37,7 @@ Next, you specify how the dynamic content is produced by setting functions that 
 		return v;
 	};
 	
-	// Content definition
+	// link content function with the site 
 	g_site["home"] = f;
 
 
